@@ -1,0 +1,68 @@
+.signup {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.label {
+  font-size: 20px;
+}
+
+.input {
+  width: 100%;
+  height: 40px;
+  background-color: rgb(217, 217, 217, 0.3);
+  border-radius: 70px;
+  border: 1px solid rgb(117, 105, 105);
+  font-size: 15px;
+  text-align: center;
+  padding: 5px 15px;
+  margin: 10px 0 8px 0;
+}
+
+.size-error {
+  margin: 10px 0;
+  color: rgb(159, 4, 4);
+}
+
+.next {
+  color: white;
+  background-color: #344955;
+  border: 1px solid rgb(117, 105, 105);
+  border-radius: 70px;
+  font-size: 22px;
+  font-family: "Barlow", sans-serif;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 180px !important;
+  margin-top: 20px;
+}
+
+.eula {
+  font-size: 20px;
+}
+
+@media (max-width: 468px) {
+  .signup {
+    max-width: 300px;
+  }
+  .input {
+    max-width: 280px;
+  }
+
+  .next {
+    padding: 15px 122px !important;
+  }
+}
+@media (max-width: 360px) {
+  .signup {
+    max-width: 260px;
+  }
+  .input {
+    max-width: 240;
+  }
+  .next {
+    padding: 15px 112px !important;
+  }
+}

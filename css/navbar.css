@@ -1,0 +1,149 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+
+.navbar a {
+  text-decoration: none;
+}
+
+.container-navbar {
+  display: flex;
+  gap: 50px;
+}
+
+.container-navbar li {
+  list-style: none;
+  font-size: 30px;
+}
+
+.container-navbar li a {
+  color: black;
+  font-size: 30px;
+  transition: 0.5s;
+}
+.container-navbar li a:hover {
+  color: #5f696e;
+}
+
+.navbar .logo a {
+  font-size: 60px;
+  color: black;
+}
+.navbar .logo a:hover {
+  font-size: 60px;
+  color: #344955;
+}
+
+
+.navbar .register a {
+  color: white;
+  font-size: 20px;
+  padding: 15px 20px;
+  background-color: #303939;
+  border-radius: 30px;
+  transition: 0.5s;
+}
+
+.navbar .register:hover a {
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
+.navbar .hamburger {
+  display: none;
+}
+
+.sisi-kanan {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: -110%;
+  width: 70%;
+  height: 100%;
+  background: linear-gradient(to right, #c2c2c2 5%, #83a492 50%, #75789d 99%);
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+  transition: right 0.3s ease;
+  z-index: 1000;
+  padding: 20px 0;
+}
+
+.mobile-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 50px 0 0 20px;
+}
+
+.mobile-menu li {
+  margin: 20px 0;
+}
+
+.mobile-menu a {
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.close-menu {
+  font-size: 40px;
+  cursor: pointer;
+  padding: 20px;
+  text-align: right;
+}
+
+
+.mobile-menu.open {
+  right: 0;
+}
+
+/* 
+  Mobiles
+  320px
+  480px
+  640px
+  
+  Tablets
+  768px
+  1024px - landscape
+  
+  Desktops
+  1124px */
+
+
+@media (max-width: 1024px) {
+  .navbar .hamburger {
+    display: block;
+  }
+
+  .navbar .container-navbar {
+    display: none;
+  }
+
+  .navbar .hamburger {
+    display: block;
+  }
+
+
+  .navbar .container-navbar {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar .logo a {
+    font-size: 30px;
+  }
+
+  .navbar .register a {
+    font-size: 14px;
+  }
+}

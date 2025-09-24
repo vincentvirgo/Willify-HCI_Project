@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(to right, #c2c2c2 5%, #83a492 50%, #75789d 99%);
+  font-family: "Barlow", sans-serif;
+}
+
+
+
+.heading-songs {
+  margin: 40px 0 20px 0;
+  font-size: 30px;
+}
+
+.show {
+  font-size: 26px;
+  color: #ffffff;
+  opacity: 0.6;
+}
+
+.songs-atas {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.isi-container {
+  max-width: 85%;
+  margin: 60px auto;
+}
+
+.search {
+  padding: 10px 20px;
+  background-color: #aba0a0;
+  display: flex;
+  align-items: center;
+  border-radius: 30px;
+  max-width: 60%;
+  margin: 20px auto;
+}
+
+.search img {
+  width: 40px;
+}
+
+.search input {
+  padding: 5px 20px;
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  outline: none;
+  width: 100%;
+}
+
+.topAlbumSongs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.blur-overlay {
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .search {
+    max-width: 80%;
+  }
+  .heading-songs {
+    font-size: 20px;
+  }
+  .show {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 542px) {
+  .topAlbumSongs img {
+    width: 44%;
+  }
+}

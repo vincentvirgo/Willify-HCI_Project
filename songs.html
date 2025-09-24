@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Willify</title>
+    <link rel="stylesheet" href="./css/songs.css" />
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="logo"><a href="index.html">WILLIFY</a></div>
+      <ul class="container-navbar">
+        <li class="home"><a href="index.html">Home</a></li>
+        <li class="songs"><a href="songs.html">Songs</a></li>
+        <li class="about"><a href="about.html">About Us</a></li>
+        <li class="avaliable"><a href="available.html">Available Songs</a></li>
+      </ul>
+      <div class="sisi-kanan">
+        <div class="register"><a href="./register.html">Register</a></div>
+        <div>
+          <img src="./assets/header/hamburgerMenu.svg" class="hamburger" alt="hamburge r" />
+        </div>
+        <div class="mobile-menu" id="mobileMenu">
+          <span class="close-menu" id="closeMenu">×</span>
+          <ul>
+            <li class="home"><a href="index.html">Home</a></li>
+            <li class="songs"><a href="songs.html">Songs</a></li>
+            <li class="about"><a href="about.html">About Us</a></li>
+            <li class="avaliable"><a href="available.html">Available Songs</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section class="container-songs">
+      <div class="search">
+        <img src="./assets/songs/micIcon.svg" alt="micIcon" />
+        <input type="text" placeholder="Search" />
+      </div>
+      <div class="isi-container">
+        <div>
+          <div class="songs-atas">
+            <h3 class="heading-songs top">Top Albums</h3>
+            <p class="heading-songs show">Show All</p>
+          </div>
+          <div class="topAlbumSongs">
+            <img class="topAlbum" src="./assets/songs/topA1.png" alt="topAlbumPic" />
+            <img class="topAlbum" src="./assets/songs/topA2.png" alt="topAlbumPic" />
+            <img class="topAlbum" src="./assets/songs/topA3.png" alt="topAlbumPic" />
+            <img class="topAlbum" src="./assets/songs/topA4.png" alt="topAlbumPic" />
+          </div>
+
+        </div>
+
+        <div>
+          <h3 class="heading-songs user">Made For User</h3>
+          <div class="topAlbumSongs">
+            <img class="topAlbum" src="./assets/songs/madeForU1.png" alt="topAlbumPic" />
+            <img class="topAlbum" src="./assets/songs/madeForU2.png" alt="topAlbumPic" />
+            <img class="topAlbum" src="./assets/songs/madeForU3.png" alt="topAlbumPic" />
+            <img class="topAlbum" src="./assets/songs/madeForU4.png" alt="topAlbumPic" />
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <footer>
+
+
+      <div class="footer-atas">
+
+        <div class="footer-logo">WILLIFY</div>
+        <div class="footer-link">
+          <p class="foot_company">COMPANY</p>
+          <p class="foot_communities">COMMUNITIES</p>
+          <p class="foot_links">USEFUL LINKS</p>
+          <p class="foot_plans">WILLIFY PLANS</p>
+          <p class="foot_terms">TERMS OF SERVICE</p>
+          <p class="foot_privacy">PRIVACY NOTICE</p>
+        </div>
+        <div class="footer-icon">
+          <img class="icon" src="./assets/footer/igIcon.svg" alt="ig" />
+          <img class="icon" src="./assets/footer/twitIcon.svg" alt="twit" />
+          <img class="icon" src="./assets/footer/fbIcon.svg" alt="fb" />
+        </div>
+      </div>
+
+      <div class="footer-bawah">
+        <img class="foot_earth" src="./assets/footer/Earth Globe.png" alt="Unable to load image" />
+        <p class="foot_english">ENGLISH+ | Cookie Preferences | <span>&#169; 2024 Willy</span></p>
+      </div>
+    </footer>
+  </body>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const hamburger = document.querySelector(".hamburger");
+      const mobileMenu = document.getElementById("mobileMenu");
+      const closeMenu = document.getElementById("closeMenu");
+
+      hamburger.addEventListener("click", function () {
+        mobileMenu.classList.add("open");
+      });
+
+      closeMenu.addEventListener("click", function () {
+        mobileMenu.classList.remove("open");
+      });
+    });
+  </script>
+</html>

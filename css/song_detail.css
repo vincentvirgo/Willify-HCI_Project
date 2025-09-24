@@ -1,0 +1,287 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(to right, #c2c2c2 5%, #83a492 50%, #75789d 99%);
+  font-family: "Barlow", sans-serif;
+}
+
+.navbar .logo {
+  margin: 20px;
+}
+.navbar .logo a {
+  font-size: 40px;
+  color: black;
+  text-decoration: none;
+}
+
+.navbar .logo a:hover {
+  font-size: 40px;
+  color: #344955;
+}
+
+.container-songskiri {
+  background-color: #5f515e;
+  color: #989494;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.highlight {
+  color: white;
+}
+
+.lyrics {
+  padding: 60px;
+}
+
+.container-player {
+  background-color: #798599;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 70%;
+  margin: 40px auto;
+  border-radius: 60px;
+}
+.middle-player {
+  background-color: #98a4ac;
+  padding: 6px 50px;
+  border-radius: 50px;
+}
+
+.title {
+  font-size: 22px;
+  color: white;
+}
+
+.singer {
+  font-size: 14px;
+}
+
+.right-player img {
+  margin-right: 20px;
+}
+
+.container-songskanan {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: #35374b;
+}
+
+.text2 {
+  font-size: 14px;
+  margin-left: 20px;
+  color: #989494;
+}
+
+.descsongs-full {
+  padding-bottom: 20px;
+}
+
+.desc-singer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+.head {
+  font-size: 30px;
+  color: white;
+}
+.head2 {
+  font-size: 16px;
+  color: #989494;
+}
+
+.responsive-dsongs {
+  margin: 0 auto;
+}
+.detail-songs {
+  display: flex;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.coversongs {
+  border-top-right-radius: 20px;
+  width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .container-songskanan,
+  .container-songskiri {
+    width: 800px;
+  }
+  .container-songskiri {
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 20px;
+  }
+
+  .container-songskanan {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+
+  .coversongs {
+    border-top-right-radius: 0;
+  }
+  .detail-songs {
+    flex-wrap: wrap;
+  }
+
+  .container-player {
+    background-color: #798599;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 80%;
+    margin: 40px auto;
+    border-radius: 60px;
+  }
+  .pause-button {
+    width: 120px;
+  }
+  .setting-kanan {
+    width: 24px;
+  }
+
+  .music {
+    width: 120px;
+  }
+  .title {
+    font-size: 16px;
+  }
+  .singer {
+    margin-top: 5px;
+    font-size: 12px;
+  }
+}
+@media (max-width: 768px) {
+  .detail-songs {
+    max-width: 90%;
+  }
+
+  .container-player {
+    background-color: #798599;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 90%;
+    margin: 40px auto;
+    border-radius: 60px;
+  }
+  .pause-button {
+    width: 90px;
+  }
+  .setting-kanan {
+    width: 18px;
+  }
+  .middle-player {
+    padding: 5px 20px;
+    border-radius: 0;
+  }
+  .music {
+    width: 120px;
+  }
+  .title {
+    font-size: 16px;
+  }
+  .singer {
+    margin-top: 5px;
+    font-size: 12px;
+  }
+  .back_button {
+    width: 50px;
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 542px) {
+  .container-player {
+    background-color: #798599;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 95%;
+    margin: 40px auto;
+    border-radius: 60px;
+  }
+  .pause-button {
+    width: 70px;
+  }
+  .setting-kanan {
+    width: 14px;
+  }
+  .middle-player {
+    padding: 5px 20px;
+    border-radius: 0;
+  }
+  .music {
+    width: 80px;
+  }
+  .title {
+    font-size: 14px;
+  }
+  .singer {
+    margin-top: 5px;
+    font-size: 11px;
+  }
+
+  .head {
+    font-size: 18px;
+    margin-left: 10px;
+  }
+  .head2 {
+    font-size: 14px;
+    margin-left: 10px;
+  }
+
+  .lyrics {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 380px) {
+  .container-player {
+    background-color: #798599;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 95%;
+    margin: 40px auto;
+    border-radius: 60px;
+  }
+  .pause-button {
+    width: 70px;
+  }
+  .setting-kanan {
+    width: 16px;
+  }
+
+  .right-player img {
+    margin-right: 0;
+  }
+  .middle-player {
+    padding: 3px 14px;
+    border-radius: 0;
+  }
+  .music {
+    width: 90px;
+  }
+  .title {
+    font-size: 13px;
+  }
+  .singer {
+    margin-top: 5px;
+    font-size: 10px;
+  }
+}

@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(to right, #c2c2c2 5%, #83a492 50%, #75789d 99%);
+  font-family: "Barlow", sans-serif;
+}
+
+
+.hero {
+  background-image: url("../assets/homePage/Hero.png");
+  max-width: 85%;
+  height: 280px;
+  border-radius: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  position: relative;
+}
+
+.hero-1 {
+  position: absolute;
+  width: 100%;
+  top: 40%;
+  text-align: center;
+  color: #f5f5f5;
+  font-size: 30px;
+  font-family: "Times New Roman", Times, serif;
+}
+.hero-2 {
+  position: absolute;
+  top: 85%;
+  width: 100%;
+  text-align: center;
+  color: #f5f5f5;
+  font-size: 24px;
+  font-weight: 500;
+  opacity: 0.9;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.container-welcome div {
+  max-width: 85%;
+  margin: 0 auto;
+}
+
+.welcome {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 600;
+  color: #35374b;
+  margin: 30px 0;
+}
+
+.text {
+  font-size: 25px;
+  text-align: center;
+  color: black;
+}
+
+.recommendation {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 600;
+  color: #35374b;
+  margin: 40px 0;
+}
+
+.songs {
+  max-width: 100%;
+}
+.songs2 {
+  display: none;
+}
+.container-recommendation {
+  display: flex;
+  justify-content: center;
+}
+/* 
+Mobiles
+320px
+480px
+640px
+
+Tablets
+768px
+1024px - landscape
+
+Desktops
+1124px */
+
+
+@media (max-width: 1024px) {
+
+  .hero {
+    max-width: 92%;
+  }
+  .hero-1 {
+    font-size: 24px;
+  }
+  .hero-2 {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .songs {
+    display: none;
+  }
+  .songs2 {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .welcome {
+    font-size: 32px;
+    margin: 20px 0;
+  }
+  .hero-1 {
+    font-size: 20px;
+  }
+  .recommendation {
+    font-size: 20px;
+  }
+  .text {
+    font-size: 16px;
+  }
+
+  .songs2 {
+    width: 500px;
+  }
+}
+@media (max-width: 640px) {
+  .hero-1 {
+    font-size: 18px;
+  }
+  .songs2 {
+    width: 360px;
+  }
+}
+@media (max-width: 380px) {
+  .songs2 {
+    width: 300px;
+  }
+}
+@media (max-width: 320px) {
+  .songs2 {
+    width: 300px;
+  }
+}
