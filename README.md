@@ -11,6 +11,7 @@ The navigation bar is a key part of the website, allowing users to easily access
 * About Us
 * Available Songs
 * Register
+<img src="image/1.1.png" alt="Home Page Screenshot 1">
 
 ### Home Page
 The first page users see upon visiting the site. It features:
